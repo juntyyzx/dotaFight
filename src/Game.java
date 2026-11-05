@@ -5,7 +5,7 @@ public class Game {
     int takeDamage(){
     while (hp > 0) {
         hp -= takeDamage();
-
     }
+    return 700;
     }
 }

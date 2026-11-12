@@ -14,4 +14,9 @@ public class Carry extends Hero {
     public void useAbility(Hero[] team) {
         roundsPlayed++;
     }
+    @Override
+    public void levelUp() {
+        super.levelUp();
+        roundsPlayed = 0;
+    }
 }

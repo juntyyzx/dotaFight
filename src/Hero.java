@@ -43,4 +43,9 @@ public class Hero {
         }
         return name + " (" + type + "): " + hp + "/" + maxHp + " HP";
     }
+    public void levelUp() {
+        maxHp += 40;
+        damage += 5;
+        hp = maxHp;
+    }
 }

@@ -29,15 +29,15 @@ public class Boss {
         hp = Math.max(0, hp - amount);  "выбирает 0 если герои снесут хп больше чем было у босса"
     }
 
-    public boolean isAlive() {
+    public boolean isAlive() {   "проверка жив ли босс"
         return hp > 0;
     }
 
-    public void chooseDefence(String[] types) {
+    public void chooseDefence(String[] types) {  "выбирает рандомный тип защиты"
         defenceType = types[random.nextInt(types.length)];
     }
 
-    public int getHp() { return hp; }
+    public int getHp() { return hp; }        "поля-геттеры, нужны потому что поля private"
     public int getDamage() { return damage; }
     public String getDefenceType() { return defenceType; }
 }
